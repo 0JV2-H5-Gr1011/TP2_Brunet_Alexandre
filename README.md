@@ -3,4 +3,5 @@ TP Final JV2 EDM ATIM par Alexandre Brunet.
 
 Sources:
 
-UI: https://assetstore.unity.com/packages/tools/gui/3d-modern-menu-ui-116144\
+UI: https://www.pexels.com/photo/plastic-scattered-on-beach-shore-9034664/
+https://github.com/stoogebag/Unity-Template

@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CurseurVolume : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public AudioSource son;
+    public Slider curseur;
+
     void Start()
     {
-        
+        if (curseur != null && son != null)
+        {
+            curseur.value = son.volume;
+            curseur.onValueChanged.AddListener(ChangerVolume);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void ChangerVolume(float valeur)
     {
-        
+        if (son != null)
+        {
+            son.volume = valeur;
+        }
     }
 }

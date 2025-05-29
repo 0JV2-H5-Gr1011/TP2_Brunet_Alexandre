@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Compost
   - Lid
+  - Volume
   layers:
   - Default
   - TransparentFX

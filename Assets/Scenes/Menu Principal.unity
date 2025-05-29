@@ -674,6 +674,7 @@ MonoBehaviour:
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &827631447
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +733,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290d0649d7cf2f945845a08f83daf80e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 0e47150 (Modif UI)
 =======
 >>>>>>> parent of 0e47150 (Modif UI)
 --- !u!1 &836247838
@@ -1252,6 +1255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1448412773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,6 +1523,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744364482}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of 0e47150 (Modif UI)
 =======
 >>>>>>> parent of 0e47150 (Modif UI)
 --- !u!1 &1872869791

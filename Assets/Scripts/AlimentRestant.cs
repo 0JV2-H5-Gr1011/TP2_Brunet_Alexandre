@@ -10,7 +10,7 @@ public class AlimentRestant : MonoBehaviour
     {
         texte.fontSize = 46;
         texte.fontStyle = FontStyles.Bold;
-        texte.color = new Color(0.1f, 0.3f, 0.6f);
+        texte.color = new Color(0.4f, 0.7f, 1f);
         texte.enableWordWrapping = false;
     }
 

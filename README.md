@@ -17,4 +17,5 @@ https://assetstore.unity.com/packages/3d/food-props-163295
 Sons, pris de Sounsnap, license eudiante sans attribution requise.
 
 Texture plage: https://assetstore.unity.com/packages/2d/textures-materials/nature/yughues-free-sand-materials-12964
+https://assetstore.unity.com/packages/3d/props/simple-free-beach-models-287370
 

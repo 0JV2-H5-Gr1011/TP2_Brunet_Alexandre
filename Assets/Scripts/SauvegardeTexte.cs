@@ -13,7 +13,7 @@ public class SauvegardeTexte : MonoBehaviour
         }
     }
 
-    void OnDisable()
+    public **void** SauvegarderTexte() // Change to PUBLIC
     {
         PlayerPrefs.SetString("TexteSauvegarde", champTexte.text);
         PlayerPrefs.Save();

@@ -11,7 +11,7 @@ public class LevitationObjet : MonoBehaviour
         lumiere = gameObject.AddComponent<Light>();
         lumiere.type = LightType.Point;
         lumiere.color = Color.cyan;
-        lumiere.range = 2f;
+        lumiere.range = 3f;
         lumiere.intensity = 0.1f;
     }
 

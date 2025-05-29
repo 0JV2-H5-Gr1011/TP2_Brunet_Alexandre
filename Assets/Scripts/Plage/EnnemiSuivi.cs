@@ -6,21 +6,15 @@ public class EnnemiSuivi : MonoBehaviour
     public Transform cible;
     public NavMeshAgent agent;
     public float delaiCollision = 2f;
+    public AudioSource audioSource;
+    public AudioClip sonCollision;
 
-    Transform positionDepartJoueur;
-    float dernierContact = -999f;
+    private float dernierContact = -999f;
 
     void Start()
     {
         if (agent == null)
             agent = GetComponent<NavMeshAgent>();
-
-        if (cible != null)
-        {
-            GameObject vide = new GameObject("DepartJoueur");
-            vide.transform.position = cible.position;
-            positionDepartJoueur = vide.transform;
-        }
     }
 
     void Update()
@@ -31,7 +25,7 @@ public class EnnemiSuivi : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && Time.time - dernierContact >= delaiCollision)
+        if (other.transform == cible && Time.time - dernierContact >= delaiCollision)
         {
             GameObject[] points = GameObject.FindGameObjectsWithTag("Point");
             if (points.Length > 0)
@@ -40,8 +34,8 @@ public class EnnemiSuivi : MonoBehaviour
                 Destroy(points[index]);
             }
 
-            if (positionDepartJoueur != null)
-                other.transform.position = positionDepartJoueur.position;
+            if (audioSource && sonCollision)
+                audioSource.PlayOneShot(sonCollision);
 
             dernierContact = Time.time;
         }

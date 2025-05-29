@@ -14,10 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maison.unity
     guid: 20323552b1e94415fa6bd7ee8aeadbdc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene pour la Musique.unity
     guid: f2effb6ea9698c94c9e91fdefb78d298
   - enabled: 1
     path: Assets/Scenes/Plage.unity
     guid: 4049ba2814426dc4d8aa2a61bb614fbd
+  - enabled: 1
+    path: Assets/Scenes/SceneFinale.unity
+    guid: 48c024bffb665a04fa4199b1e100c2bd
   m_configObjects: {}

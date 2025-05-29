@@ -7,7 +7,7 @@ public class ControleDolly : MonoBehaviour
     public CinemachineVirtualCamera camVirtuelle;
     public float prioriteSeuil = 10f;
     public CanvasGroup[] interfacesUI;
-    public CharacterController controleur;
+    public GameObject joueur;
     public float vitesseFade = 1f;
 
     bool enDolly = false;
@@ -20,13 +20,13 @@ public class ControleDolly : MonoBehaviour
         if (active && !enDolly)
         {
             enDolly = true;
-            controleur.enabled = false;
+            joueur.SetActive(false);
             cibleAlpha = 0f;
         }
         else if (!active && enDolly)
         {
             enDolly = false;
-            controleur.enabled = true;
+            joueur.SetActive(true);
             cibleAlpha = 1f;
         }
 

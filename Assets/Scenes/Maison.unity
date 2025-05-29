@@ -8435,6 +8435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3099f2c5b0c2f8b49904d40bdfc746ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagAliment: Compost
   texte: {fileID: 218582697}
 --- !u!1 &1102665920
 GameObject:

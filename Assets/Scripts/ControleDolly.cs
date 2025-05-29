@@ -57,6 +57,7 @@ public class ControleDolly : MonoBehaviour
     IEnumerator JouerSonAvecDelai()
     {
         yield return new WaitForSeconds(3f);
-        sourceAudio.PlayOneShot(sonDolly);
+        sourceAudio.clip = sonDolly;
+        sourceAudio.Play();
     }
 }

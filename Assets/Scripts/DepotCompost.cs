@@ -2,39 +2,41 @@ using UnityEngine;
 
 public class DepotCompost : MonoBehaviour
 {
-    public Transform couvercle;
+    public RamassageCompost joueur;
     public float distanceDepot = 3f;
-    public Transform joueur;
-    public RamassageCompost ramassage;
+    public Transform couvercle;
+    public AudioSource sonCouvercle;
+    public AudioClip sonOuverture;
 
-    private float rotationOuverte = -40f;
-    private float rotationFermee = 0f;
-    private float vitesseRotation = 2f;
+    private bool ouvert = false;
 
     void Update()
     {
-        float dist = Vector3.Distance(joueur.position, transform.position);
-        bool proche = dist <= distanceDepot;
+        float dist = Vector3.Distance(joueur.transform.position, transform.position);
 
-        if (proche && ramassage.tientObjet)
+        if (dist <= distanceDepot && joueur.tientObjet)
         {
-            Vector3 rotationTarget = new Vector3(rotationOuverte, 0, 0);
-            couvercle.localRotation = Quaternion.Slerp(couvercle.localRotation, Quaternion.Euler(rotationTarget), Time.deltaTime * vitesseRotation);
-
+            if (!ouvert)
+            {
+                couvercle.localRotation = Quaternion.Euler(-40f, 0f, 0f);
+                if (sonCouvercle && sonOuverture) sonCouvercle.PlayOneShot(sonOuverture);
+                ouvert = true;
+            }
             if (Input.GetKeyDown(KeyCode.E))
             {
-                ramassage.tientObjet = false;
-                if (ramassage.objetTenu != null)
-                {
-                    Destroy(ramassage.objetTenu);
-                    ramassage.objetTenu = null;
-                }
+                joueur.tientObjet = false;
+                joueur.objetTenu = null;
+                couvercle.localRotation = Quaternion.Euler(0f, 0f, 0f);
+                ouvert = false;
             }
         }
         else
         {
-            Vector3 rotationTarget = new Vector3(rotationFermee, 0, 0);
-            couvercle.localRotation = Quaternion.Slerp(couvercle.localRotation, Quaternion.Euler(rotationTarget), Time.deltaTime * vitesseRotation);
+            if (ouvert)
+            {
+                couvercle.localRotation = Quaternion.Euler(0f, 0f, 0f);
+                ouvert = false;
+            }
         }
     }
 }

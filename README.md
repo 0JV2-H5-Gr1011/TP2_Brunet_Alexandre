@@ -13,3 +13,5 @@ https://assetstore.unity.com/packages/3d/props/exterior/plastic-trash-bins-16077
 
 Dechets:
 https://assetstore.unity.com/packages/3d/food-props-163295
+
+Sons, pris de Sounsnap, license eudiante sans attribution requise.

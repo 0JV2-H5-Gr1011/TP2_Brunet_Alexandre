@@ -24,3 +24,5 @@ Eau: https://assetstore.unity.com/packages/2d/textures-materials/water/simple-wa
 Pont: https://assetstore.unity.com/packages/3d/environments/rope-bridge-3d-222563
 
 Skybox: https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353
+
+Maison: https://assetstore.unity.com/packages/3d/props/exterior/low-poly-houses-free-pack-243926

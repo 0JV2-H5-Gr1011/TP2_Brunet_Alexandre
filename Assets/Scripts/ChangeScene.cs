@@ -3,8 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangerScene : MonoBehaviour
 {
-    public void ChargerScene(string nomScene)
+    [SerializeField] private string sceneACharger;
+    [SerializeField] private string sceneASupprimer;
+
+    public void ChargerScene()
     {
-        SceneManager.LoadScene(nomScene);
+        SceneManager.LoadScene(sceneACharger, LoadSceneMode.Additive);  
+        SceneManager.UnloadSceneAsync(sceneASupprimer);
     }
 }

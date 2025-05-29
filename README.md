@@ -28,4 +28,9 @@ Skybox: https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-
 
 Maison Ext:https://assetstore.unity.com/packages/3d/environments/low-poly-medieval-free-pack-253520
 
-Filet Volleyball: https://assetstore.unity.com/packages/3d/characters/free-sports-kit-239377 
+Filet Volleyball: https://assetstore.unity.com/packages/3d/characters/free-sports-kit-239377 ]
+
+Oiseaux: https://assetstore.unity.com/packages/3d/props/3d-birds-prototype-pack-150502
+
+Herbe: https://assetstore.unity.com/packages/3d/environments/smm-stylized-grass-184975
+

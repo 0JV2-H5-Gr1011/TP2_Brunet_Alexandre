@@ -9,4 +9,4 @@ Personnage: https://assetstore.unity.com/packages/3d/characters/humanoids/fantas
 
 Maison:
 https://assetstore.unity.com/packages/3d/props/interior/free-house-interior-223416
-https://assetstore.unity.com/packages/3d/props/waste-bin-73303
+https://assetstore.unity.com/packages/3d/props/exterior/plastic-trash-bins-160771

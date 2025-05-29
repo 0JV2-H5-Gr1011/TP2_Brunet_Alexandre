@@ -2,20 +2,23 @@ using UnityEngine;
 
 public class LevitationObjet : MonoBehaviour
 {
-    public float amplitude = 0.5f;
-    public float speed = 1f;
-    public float rotationSpeed = 10f;
-
-    Vector3 startPos;
+    private Vector3 posDepart;
+    private Light lumiere;
 
     void Start()
     {
-        startPos = transform.position;
+        posDepart = transform.position;
+        lumiere = gameObject.AddComponent<Light>();
+        lumiere.type = LightType.Point;
+        lumiere.color = Color.cyan;
+        lumiere.range = 2f;
+        lumiere.intensity = 0.1f;
     }
 
     void Update()
     {
-        transform.position = startPos + Vector3.up * Mathf.Sin(Time.time * speed) * amplitude;
-        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        float offset = Mathf.Sin(Time.time * 2f) * 0.2f;
+        transform.position = new Vector3(posDepart.x, posDepart.y + offset, posDepart.z);
+        transform.Rotate(0, 20 * Time.deltaTime, 0);
     }
 }

@@ -22,3 +22,5 @@ https://assetstore.unity.com/packages/3d/props/simple-free-beach-models-287370
 Eau: https://assetstore.unity.com/packages/2d/textures-materials/water/simple-water-shader-urp-191449
 
 Pont: https://assetstore.unity.com/packages/3d/environments/rope-bridge-3d-222563
+
+Skybox: https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353

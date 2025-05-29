@@ -8,7 +8,7 @@ public class AlimentRestant : MonoBehaviour
 
     void Start()
     {
-        texte.fontSize = 36;
+        texte.fontSize = 46;
         texte.fontStyle = FontStyles.Bold;
         texte.color = new Color(0.1f, 0.3f, 0.6f);
         texte.enableWordWrapping = false;

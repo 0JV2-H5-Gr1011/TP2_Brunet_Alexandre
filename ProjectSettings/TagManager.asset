@@ -8,6 +8,12 @@ TagManager:
   - Compost
   - Lid
   - Volume
+  - Rouge
+  - Bleu
+  - Jaune
+  - Nourriture
+  - Verre
+  - Carton
   layers:
   - Default
   - TransparentFX

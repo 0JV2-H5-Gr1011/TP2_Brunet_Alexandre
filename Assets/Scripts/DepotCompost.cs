@@ -5,37 +5,76 @@ public class DepotCompost : MonoBehaviour
     public RamassageCompost joueur;
     public float distanceDepot = 3f;
     public Transform couvercle;
-    public AudioSource sonCouvercle;
+    public AudioSource audioSource;
     public AudioClip sonOuverture;
+    public AudioClip sonFermeture;
+    public float vitesseOuverture = 2f;
 
-    private bool ouvert = false;
+    bool ouvert = false;
+    bool sonOuvertureJoue = false;
+    bool sonFermetureJoue = false;
+
+    Quaternion rotationOuverte = Quaternion.Euler(-40f, 0f, 0f);
+    Quaternion rotationFermee = Quaternion.Euler(0f, 0f, 0f);
 
     void Update()
     {
         float dist = Vector3.Distance(joueur.transform.position, transform.position);
+        bool procheEtTient = dist <= distanceDepot && joueur.tientObjet;
 
-        if (dist <= distanceDepot && joueur.tientObjet)
+        if (procheEtTient)
         {
             if (!ouvert)
             {
-                couvercle.localRotation = Quaternion.Euler(-40f, 0f, 0f);
-                if (sonCouvercle && sonOuverture) sonCouvercle.PlayOneShot(sonOuverture);
                 ouvert = true;
+                sonOuvertureJoue = false;
+                sonFermetureJoue = false;
             }
+
+            Quaternion rotationAvant = couvercle.localRotation;
+
+            couvercle.localRotation = Quaternion.RotateTowards(
+                couvercle.localRotation,
+                rotationOuverte,
+                vitesseOuverture * Time.deltaTime * 100);
+
+            if (!sonOuvertureJoue && audioSource && sonOuverture && Quaternion.Angle(rotationAvant, couvercle.localRotation) > 0.1f)
+            {
+                audioSource.PlayOneShot(sonOuverture);
+                sonOuvertureJoue = true;
+                sonFermetureJoue = false;
+            }
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 joueur.tientObjet = false;
                 joueur.objetTenu = null;
-                couvercle.localRotation = Quaternion.Euler(0f, 0f, 0f);
                 ouvert = false;
+                sonOuvertureJoue = false;
+                sonFermetureJoue = false;
             }
         }
         else
         {
             if (ouvert)
             {
-                couvercle.localRotation = Quaternion.Euler(0f, 0f, 0f);
                 ouvert = false;
+                sonOuvertureJoue = false;
+                sonFermetureJoue = false;
+            }
+
+            Quaternion rotationAvant = couvercle.localRotation;
+
+            couvercle.localRotation = Quaternion.RotateTowards(
+                couvercle.localRotation,
+                rotationFermee,
+                vitesseOuverture * Time.deltaTime * 100);
+
+            if (!sonFermetureJoue && audioSource && sonFermeture && Quaternion.Angle(rotationAvant, couvercle.localRotation) > 0.1f)
+            {
+                audioSource.PlayOneShot(sonFermeture);
+                sonFermetureJoue = true;
+                sonOuvertureJoue = false;
             }
         }
     }

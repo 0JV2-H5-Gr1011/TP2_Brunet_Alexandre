@@ -5,6 +5,12 @@ public class AlimentRestant : MonoBehaviour
 {
     public string tagAliment = "Compost";
     public TextMeshProUGUI texte;
+    public RamassageCompost joueur;
+    public AudioSource audioSource;
+    public AudioClip sonTermine;
+    public TextMeshProUGUI texteFin;
+
+    private bool sonJoue = false;
 
     void Start()
     {
@@ -18,5 +24,15 @@ public class AlimentRestant : MonoBehaviour
     {
         int restant = GameObject.FindGameObjectsWithTag(tagAliment).Length;
         texte.text = "Aliments restants : " + restant;
+
+        if (restant == 0 && joueur.objetTenu == null && !sonJoue)
+        {
+            if (audioSource && sonTermine) audioSource.PlayOneShot(sonTermine);
+            if (texteFin != null)
+            {
+                texteFin.text = "Dirigez-vous vers la <color=yellow>porte de sortie</color>";
+            }
+            sonJoue = true;
+        }
     }
 }

@@ -5,6 +5,8 @@ public class RamassageCompost : MonoBehaviour
     public float distanceRamassage = 3f;
     public bool tientObjet = false;
     public GameObject objetTenu;
+    public AudioSource audioSource;
+    public AudioClip sonDisparition;
 
     void Update()
     {
@@ -16,6 +18,7 @@ public class RamassageCompost : MonoBehaviour
         {
             tientObjet = true;
             objetTenu = objetProche;
+            if (audioSource && sonDisparition) audioSource.PlayOneShot(sonDisparition);
             objetProche.SetActive(false);
         }
     }

@@ -13,6 +13,7 @@ public class ControleDolly : MonoBehaviour
     public float vitesseFade = 1f;
     public AudioSource sourceAudio;
     public AudioClip sonDolly;
+    public Transform cibleRegard;
 
     bool enDolly = false;
     float cibleAlpha = 0f;
@@ -44,6 +45,13 @@ public class ControleDolly : MonoBehaviour
             enDolly = false;
             entreeJoueur.enabled = true;
             cibleAlpha = 1f;
+        }
+
+        if (enDolly && cibleRegard != null)
+        {
+            Vector3 direction = transform.position - cibleRegard.position;
+            Quaternion cibleRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, cibleRotation, Time.deltaTime * 1.5f);
         }
 
         foreach (var ui in interfacesUI)

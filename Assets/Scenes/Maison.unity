@@ -289,51 +289,6 @@ Transform:
   - {fileID: 816402388}
   m_Father: {fileID: 1216644569}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &61388474
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 61388475}
-  - component: {fileID: 61388476}
-  m_Layer: 0
-  m_Name: Backspace pour load
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &61388475
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61388474}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 491.12802, y: 671.5761, z: -8.438462}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1744795150}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61388476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61388474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc4dbbdb4ce195643909f7fd9d6eae3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controles: {fileID: 1815963456}
 --- !u!1 &62923203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,11 +1742,11 @@ MonoBehaviour:
     roll: 0
   - position: {x: -1.4451879, y: 4.4038424, z: 6.773767}
     roll: 0
-  - position: {x: -4.294577, y: 3.587554, z: 7.038696}
+  - position: {x: -3.5818448, y: 3.5875533, z: 7.038697}
     roll: 0
-  - position: {x: -3.3995419, y: 3.0813997, z: 5.4579673}
+  - position: {x: -3.0120268, y: 3.1996357, z: 5.7009625}
     roll: 0
-  - position: {x: -0.95681983, y: 4.4964833, z: 7.1456685}
+  - position: {x: -0.55467206, y: 4.4964833, z: 7.145669}
     roll: 0
   - position: {x: 1.015583, y: 2.0664055, z: 4.6635613}
     roll: 0
@@ -14142,8 +14097,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 61388475}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754413460
@@ -15191,7 +15145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceRamassage: 3
   tientObjet: 0
-  objetTenu: {fileID: 0}
+  objetTenu: {fileID: 1892760579}
   audioSource: {fileID: 1501581811}
   sonDisparition: {fileID: 8300000, guid: fd01852b3d9e1cf47aaa1e9c0c9514c6, type: 3}
 --- !u!1 &1821650016

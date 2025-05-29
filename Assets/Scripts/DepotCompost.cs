@@ -40,7 +40,8 @@ public class DepotCompost : MonoBehaviour
 
             if (!sonOuvertureJoue && audioSource && sonOuverture && Quaternion.Angle(rotationAvant, couvercle.localRotation) > 0.1f)
             {
-                audioSource.PlayOneShot(sonOuverture);
+                audioSource.clip = sonOuverture;
+                audioSource.Play();
                 sonOuvertureJoue = true;
                 sonFermetureJoue = false;
             }
@@ -72,7 +73,8 @@ public class DepotCompost : MonoBehaviour
 
             if (!sonFermetureJoue && audioSource && sonFermeture && Quaternion.Angle(rotationAvant, couvercle.localRotation) > 0.1f)
             {
-                audioSource.PlayOneShot(sonFermeture);
+                audioSource.clip = sonFermeture;
+                audioSource.Play();
                 sonFermetureJoue = true;
                 sonOuvertureJoue = false;
             }

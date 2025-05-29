@@ -27,12 +27,26 @@ public class AlimentRestant : MonoBehaviour
 
         if (restant == 0 && joueur.objetTenu == null && !sonJoue)
         {
-            if (audioSource && sonTermine) audioSource.PlayOneShot(sonTermine);
-            if (texteFin != null)
-            {
-                texteFin.text = "Dirigez-vous vers la <color=yellow>porte de sortie</color>";
-            }
+            JouerSonEtAfficherTexte();
             sonJoue = true;
+        }
+    }
+
+    public void ChoisirSon(AudioClip nouveauSon)
+    {
+        sonTermine = nouveauSon;
+    }
+
+    void JouerSonEtAfficherTexte()
+    {
+        if (audioSource && sonTermine)
+        {
+            audioSource.PlayOneShot(sonTermine);
+        }
+
+        if (texteFin != null)
+        {
+            texteFin.text = "Dirigez-vous vers la <color=yellow>porte de sortie</color>";
         }
     }
 }

@@ -18,7 +18,11 @@ public class RamassageCompost : MonoBehaviour
         {
             tientObjet = true;
             objetTenu = objetProche;
-            if (audioSource && sonDisparition) audioSource.PlayOneShot(sonDisparition);
+            if (audioSource && sonDisparition)
+            {
+                audioSource.clip = sonDisparition;
+                audioSource.Play();
+            }
             objetProche.SetActive(false);
         }
     }

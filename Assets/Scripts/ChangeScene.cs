@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class ChangerScene : MonoBehaviour
 {
     public void ChargerScene(string nomScene)
     {

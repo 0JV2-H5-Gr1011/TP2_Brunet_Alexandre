@@ -6,25 +6,16 @@ public class PorteChangement : MonoBehaviour
     public Transform joueur;
     public float distanceActivation = 3f;
     public string tagAliment = "Compost";
-    public GameObject sceneAMasquer;
-
-    bool sceneChargee = false;
+    public string nomScene = "Plage";
 
     void Update()
     {
         int restant = GameObject.FindGameObjectsWithTag(tagAliment).Length;
-        float dist = Vector3.Distance(joueur.position, transform.position);
+        float distance = Vector3.Distance(joueur.position, transform.position);
 
-        if (restant == 0 && dist <= distanceActivation && !sceneChargee && Input.GetKeyDown(KeyCode.E))
+        if (restant == 0 && distance <= distanceActivation && Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("Plage", LoadSceneMode.Additive);
-
-            if (sceneAMasquer != null)
-            {
-                sceneAMasquer.SetActive(false);
-            }
-
-            sceneChargee = true;
+            SceneManager.LoadScene(nomScene);
         }
     }
 }

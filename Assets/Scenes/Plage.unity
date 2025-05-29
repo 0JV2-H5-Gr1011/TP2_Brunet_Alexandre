@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1573722850}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,8 +96,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 942389786}
+  m_LightingDataAsset: {fileID: 112000000, guid: dc5ab5107ce957b47b33e428451e2175,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: b149590dc539f04458b6e2bd57710642,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -654,12 +656,6 @@ Transform:
   - {fileID: 1852509292}
   m_Father: {fileID: 633748851}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &99037696 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7310249193433067462, guid: 1a570f403ac9fbc439ef2f8f8fbaed19,
-    type: 3}
-  m_PrefabInstance: {fileID: 314050320}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &107856823 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 118766, guid: 714adeb0e3b85cf41902d34995a93a85,
@@ -1803,12 +1799,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1463341222}
   m_SourcePrefab: {fileID: 100100000, guid: ffce903a7cc67c947bef67dfea1e5da1, type: 3}
---- !u!4 &289913542 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7282830775174170866, guid: 0f7b3117c02f5a34591d7757a1876e31,
-    type: 3}
-  m_PrefabInstance: {fileID: 1346162930}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &291549633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4282,19 +4272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c80fa8acff4b549b370f91bbb92f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joueur: {fileID: 1815963462}
-  distanceDepot: 3
-  tagAutorise: Verre
-  couvercle: {fileID: 99037696}
-  vitesseOuverture: 2
-  audioSource: {fileID: 1501581811}
-  sonOuverture: {fileID: 8300000, guid: 8e01e748b6505d043b59587e5bfdf7fd, type: 3}
-  sonFermeture: {fileID: 8300000, guid: 62d5abeaf69229b4cbff060d394119e3, type: 3}
-  ouvert: 0
-  sonOuvertJoue: 0
-  sonFermeJoue: 0
-  rotOuverte: {x: -0.34202012, y: 0, z: 0, w: 0.9396926}
-  rotFermee: {x: 0, y: 0, z: 0, w: 1}
 --- !u!1 &722095698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5105,70 +5082,6 @@ Transform:
   - {fileID: 2102410879}
   m_Father: {fileID: 540866466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!850595691 &942389786
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 6
-  m_GIWorkflowMode: 1
-  m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 0
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_LightmapCompression: 3
-  m_AO: 0
-  m_AOMaxDistance: 1
-  m_CompAOExponent: 1
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 256
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 512
-  m_PVREnvironmentSampleCount: 256
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 2
-  m_PVREnvironmentImportanceSampling: 1
-  m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 1
-  m_PVRDenoiserTypeIndirect: 1
-  m_PVRDenoiserTypeAO: 1
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
-  m_PVRTiledBaking: 0
-  m_NumRaysToShootPerTexel: -1
-  m_RespectSceneVisibilityWhenBakingGI: 0
 --- !u!1 &943034916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 703639341689392469, guid: 8d1264d958f92714c81f3d43e933b4b7,
@@ -5187,19 +5100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c80fa8acff4b549b370f91bbb92f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joueur: {fileID: 1815963462}
-  distanceDepot: 3
-  tagAutorise: Carton
-  couvercle: {fileID: 1444684925}
-  vitesseOuverture: 2
-  audioSource: {fileID: 1501581811}
-  sonOuverture: {fileID: 8300000, guid: 8e01e748b6505d043b59587e5bfdf7fd, type: 3}
-  sonFermeture: {fileID: 8300000, guid: 62d5abeaf69229b4cbff060d394119e3, type: 3}
-  ouvert: 0
-  sonOuvertJoue: 0
-  sonFermeJoue: 0
-  rotOuverte: {x: -0.34202012, y: 0, z: 0, w: 0.9396926}
-  rotFermee: {x: 0, y: 0, z: 0, w: 1}
 --- !u!1 &956422794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 194654, guid: f81a2e904a068e44088be7a4f338d190,
@@ -8270,12 +8170,6 @@ Transform:
   - {fileID: 1497191723}
   m_Father: {fileID: 2012163953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1444684925 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6937129551389853262, guid: 8d1264d958f92714c81f3d43e933b4b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 38790548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1451707321
 GameObject:
   m_ObjectHideFlags: 0
@@ -8832,19 +8726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c80fa8acff4b549b370f91bbb92f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joueur: {fileID: 1815963462}
-  distanceDepot: 3
-  tagAutorise: Nourriture
-  couvercle: {fileID: 289913542}
-  vitesseOuverture: 2
-  audioSource: {fileID: 1501581811}
-  sonOuverture: {fileID: 8300000, guid: 8e01e748b6505d043b59587e5bfdf7fd, type: 3}
-  sonFermeture: {fileID: 8300000, guid: 62d5abeaf69229b4cbff060d394119e3, type: 3}
-  ouvert: 0
-  sonOuvertJoue: 0
-  sonFermeJoue: 0
-  rotOuverte: {x: -0.34202012, y: 0, z: 0, w: 0.9396926}
-  rotFermee: {x: 0, y: 0, z: 0, w: 1}
 --- !u!1 &1544619171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 143976, guid: 7f7c359fff45c8f4795209585a3441bb,
@@ -9166,7 +9047,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -11262,12 +11143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264731d721ee6794b88181bacf5ae776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceRamassage: 3
-  tientObjet: 0
-  objetTenu: {fileID: 1815963454}
-  audioSource: {fileID: 1501581811}
-  sonDisparition: {fileID: 8300000, guid: fd01852b3d9e1cf47aaa1e9c0c9514c6, type: 3}
-  tagsAutorises: []
 --- !u!1 &1821650016
 GameObject:
   m_ObjectHideFlags: 0

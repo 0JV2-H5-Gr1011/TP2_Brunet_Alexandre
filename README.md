@@ -34,3 +34,6 @@ Oiseaux: https://assetstore.unity.com/packages/3d/props/3d-birds-prototype-pack-
 
 Herbe: https://assetstore.unity.com/packages/3d/environments/smm-stylized-grass-184975
 
+Boites: https://assetstore.unity.com/packages/3d/props/simple-stylized-cardboard-boxes-308830
+
+Bouteilles de verre: https://assetstore.unity.com/packages/3d/props/potions-coin-and-box-of-pandora-pack-71778

@@ -14,6 +14,7 @@ TagManager:
   - Nourriture
   - Verre
   - Carton
+  - Point
   layers:
   - Default
   - TransparentFX

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene Musique.unity
     guid: daed80389cd3a5a498ced0949d796cf2
+  - enabled: 1
+    path: Assets/Scenes/SceneFinalePerd.unity
+    guid: a48c5779422ca8c4d9ad5fcb09d23f23
   m_configObjects: {}

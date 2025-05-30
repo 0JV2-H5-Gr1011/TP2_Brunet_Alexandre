@@ -23,7 +23,7 @@ public class PointsRestants : MonoBehaviour
     void Update()
     {
         int restant = GameObject.FindGameObjectsWithTag(tagPoints).Length;
-        texte.text = "Points restants : " + restant;
+        texte.text = "Vies restants : " + restant;
 
         if (restant == 0)
         {

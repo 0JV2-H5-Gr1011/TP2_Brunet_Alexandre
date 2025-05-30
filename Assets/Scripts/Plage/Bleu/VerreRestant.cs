@@ -27,6 +27,7 @@ public class VerreRestant : MonoBehaviour
         if (restant == 0 && joueur.objetTenu == null && !sonJoue)
         {
             JouerSon();
+            GestionTri.AjouterSiTermine(tagAliment);
             sonJoue = true;
         }
     }

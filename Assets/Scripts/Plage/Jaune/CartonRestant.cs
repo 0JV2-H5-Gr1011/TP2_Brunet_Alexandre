@@ -15,7 +15,7 @@ public class CartonRestant : MonoBehaviour
     {
         texte.fontSize = 46;
         texte.fontStyle = FontStyles.Bold;
-        texte.color = new Color(1f, 1f, 0.4f); // jaune clair
+        texte.color = new Color(1f, 0.85f, 0.4f);
         texte.enableWordWrapping = false;
     }
 
@@ -27,6 +27,7 @@ public class CartonRestant : MonoBehaviour
         if (restant == 0 && joueur.objetTenu == null && !sonJoue)
         {
             JouerSon();
+            GestionTri.AjouterSiTermine(tagAliment);
             sonJoue = true;
         }
     }

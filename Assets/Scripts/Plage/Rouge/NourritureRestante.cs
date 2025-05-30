@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class NourritureRestante : MonoBehaviour
+public class NourritureRestant : MonoBehaviour
 {
     public string tagAliment = "Nourriture";
     public TextMeshProUGUI texte;
@@ -22,11 +22,12 @@ public class NourritureRestante : MonoBehaviour
     void Update()
     {
         int restant = GameObject.FindGameObjectsWithTag(tagAliment).Length;
-        texte.text = "Nourritures restantes : " + restant;
+        texte.text = "Nourriture restante : " + restant;
 
         if (restant == 0 && joueur.objetTenu == null && !sonJoue)
         {
             JouerSon();
+            GestionTri.AjouterSiTermine(tagAliment);
             sonJoue = true;
         }
     }

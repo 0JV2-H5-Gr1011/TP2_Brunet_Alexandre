@@ -15,3 +15,25 @@ Dechets:
 https://assetstore.unity.com/packages/3d/food-props-163295
 
 Sons, pris de Sounsnap, license eudiante sans attribution requise.
+
+Texture plage: https://assetstore.unity.com/packages/2d/textures-materials/nature/yughues-free-sand-materials-12964
+https://assetstore.unity.com/packages/3d/props/simple-free-beach-models-287370
+https://assetstore.unity.com/packages/3d/props/exterior/super-beach-pack-39084
+
+Eau: https://assetstore.unity.com/packages/2d/textures-materials/water/simple-water-shader-urp-191449
+
+Pont: https://assetstore.unity.com/packages/3d/environments/rope-bridge-3d-222563
+
+Skybox: https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353
+
+Maison Ext:https://assetstore.unity.com/packages/3d/environments/low-poly-medieval-free-pack-253520
+
+Filet Volleyball: https://assetstore.unity.com/packages/3d/characters/free-sports-kit-239377 ]
+
+Oiseaux: https://assetstore.unity.com/packages/3d/props/3d-birds-prototype-pack-150502
+
+Herbe: https://assetstore.unity.com/packages/3d/environments/smm-stylized-grass-184975
+
+Boites: https://assetstore.unity.com/packages/3d/props/simple-stylized-cardboard-boxes-308830
+
+Bouteilles de verre: https://assetstore.unity.com/packages/3d/props/potions-coin-and-box-of-pandora-pack-71778

@@ -7,6 +7,14 @@ TagManager:
   - CinemachineTarget
   - Compost
   - Lid
+  - Volume
+  - Rouge
+  - Bleu
+  - Jaune
+  - Nourriture
+  - Verre
+  - Carton
+  - Point
   layers:
   - Default
   - TransparentFX
